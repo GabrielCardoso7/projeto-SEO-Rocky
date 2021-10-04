@@ -1,0 +1,166 @@
+/* 
+    Arquivo que contém toda a estilização da Section 3 da página.
+
+*/
+
+/* Início do Bloco de estilização para Web */
+.s3{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    transform: translateX(-5%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+
+}
+
+.groupCards{
+
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.serviceCard{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 30%;
+    height: 70vh;
+
+    border-radius: 30px;
+
+}
+
+.serviceCard h3{
+
+    margin: 0;
+
+    font-weight: 800;
+    font-size: 1.6em;
+    text-align: center;
+
+}
+
+.serviceCard p{
+
+    margin: 0% 10%;
+
+    font-weight: 300;
+    font-size: 1.6em;
+    color: white;
+
+}
+
+/* 
+    Classe destinada a adicionar um background específico a
+    um card. Exemplo:
+        
+        .cardS3Bg2
+
+        card = significa que é um card.
+        S3 = significa que esse card se encontra na Section 3.
+        Bg2 = significa o numero da foto encontrada na pasta assets 
+        que será adicionada ao background do card.
+    
+*/
+
+.cardS3Bg1{
+
+    background-image: url("../assets/web/s3ft1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+
+}
+
+.cardS3Bg2{
+
+    background-image: url("../assets/web/s3ft2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+
+}
+
+.cardS3Bg3{
+
+    background-image: url("../assets/web/s3ft3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+
+}
+/* Fim do Bloco de estilização para Web */
+
+/* Início do Bloco de estilização para Mobile */
+@media screen and (max-width: 600px) {
+    
+    .groupCards{
+    
+        flex-direction: column;
+        width: 80%;
+    
+    }
+    
+    .serviceCard{
+    
+        justify-content: space-evenly;
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 25px;
+    
+    }
+    
+    .serviceCard h3{
+    
+        font-size: 1em;
+    
+    }
+    
+    .serviceCard p{
+    
+        font-size: 0.75em;
+    
+    }
+
+    .cardS3Bg1{
+
+        background-image: url("../assets/mobile/s3ft1.png");
+        background-size: 150%;
+
+    }
+    
+    .cardS3Bg2{
+    
+        background-image: url("../assets/mobile/s3ft2.png");
+        background-size: 150%;
+    
+    }
+    
+    .cardS3Bg3{
+    
+        background-image: url("../assets/mobile/s3ft3.png");
+        background-size: 150%;
+
+    }
+
+}
+/* Fim do Bloco de estilização para Mobile */
+
+/* Classe utilizada para efetuar a animação no arquivo app.js */
+.s3Active{
+
+    transform: translateX(0%);
+    opacity: 1;
+                
+}

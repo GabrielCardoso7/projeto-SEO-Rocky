@@ -1,0 +1,372 @@
+/* 
+    Arquivo que contém toda a estilização do Bloco Header da página.
+
+*/
+
+/* Inicío do Bloco de estilização para Web */
+.navBar{
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+    height: 8.5vh;
+    padding: 0% 5%;
+
+    background-color: rgba(0, 0, 0, 0);
+
+    transition: background-color 0.5s linear,
+                height 0.3s ease-in-out;
+
+    z-index: 10;
+
+}
+
+.navBarActive{
+
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 5vh;
+
+}
+
+
+#navLogo{
+
+    width: 30%;
+    height: 50%;
+
+    background: url("../assets/web/logo.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+
+}
+
+.navLinks{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 70%;
+    height: 100%;
+
+    list-style: none;
+
+}
+
+
+.navLinks a{
+
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 800;
+    text-decoration: none;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.menuBurgerMobile{
+
+    display: none;
+
+}
+/* Fim do Bloco de estilização para Web */
+
+/* Início do Bloco de estilização para Mobile */
+@media (max-width: 600px) {
+
+    .navBar{
+
+        position: absolute;
+    
+    }
+
+    .navLinks{
+
+        display: none;
+    
+    }
+
+    .menuBurgerMobile{
+
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        width: 55vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 20px;
+
+        transform: translateX(-70%);
+        transition: 
+            transform 0.5s ease-in-out, 
+            background-color 0.3s linear;
+
+        z-index: 10;
+
+    }
+
+    .btnBurger{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        margin-top: 10px;
+        margin-right: 0px;
+
+        background: rgba(0, 0, 0, 0.781);
+        border-radius: 5px;
+
+        cursor: pointer;
+    
+    }
+
+    .lineBurger1{
+
+        width: 30px;
+        height: 2px;
+
+        background: white;
+
+        transform: rotate(0deg) translate(0px,0px);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .lineBurger2{
+
+        width: 30px;
+        height: 2px;
+
+        background: white;
+
+    }
+
+    .lineBurger3{
+
+        width: 30px;
+        height: 2px;
+
+        background: white;
+
+        transform: rotate(0deg) translate(0px,0px);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .burgerLinksMobile{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        list-style: none;
+
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+
+    }
+
+    .burgerLinksMobile li{
+
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    .burgerLinksMobile li::after{
+
+        content: "";
+        width: 60%;
+        height: 1px;
+        background-color: white;
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+    .burgerLinksMobile a{
+
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .serviceSlide{
+
+        position: absolute;
+        right: 10%;
+
+        color: white;
+
+        transform: rotate(0deg);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .serviceList{
+
+        width: 100%;
+        height: 0;
+        
+        transform: scaleY(0%);
+        transition: 
+            transform 0.5s ease-in-out,
+            height 0.5s ease-in-out;
+
+    }
+
+    .serviceItem{
+
+        margin-top: 10px;
+
+        font-size: 0.8em;
+        color: white;
+
+    }
+
+    .difSlide{
+
+        position: absolute;
+        right: 10%;
+
+        color: white;
+
+        transform: rotate(0deg);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .difList{
+
+        width: 100%;
+        height: 0;
+        
+        transform: scaleY(0%);
+        transition: 
+            transform 0.5s ease-in-out,
+            height 0.5s ease-in-out;
+
+    }
+
+    .difItem{
+
+        margin-top: 10px;
+
+        font-size: 0.8em;
+        color: white;
+
+    }
+
+
+    #navLogo{
+
+        background-image: url("../assets/mobile/logo.png");
+
+    }
+
+    .navBarActive{
+
+        background-color: rgba(0, 0, 0, 0);
+        height: 8.5vh;
+    
+    }
+
+}
+/* Fim do Bloco de estilização para Mobile */
+
+/* Classes utilizadas para efetuar as animações no arquivo app.js */
+.menuBurgerActive{
+
+    transform: translateX(0%);
+    background: rgba(0, 0, 0, 0.781);
+
+}
+
+.btnBurgerActive{
+
+    background: rgba(0, 0, 0, 0);
+
+}
+
+.navLinksMobileActive{
+
+    opacity: 1;
+
+}
+
+.lineBurger1Active{
+
+    transform: rotate(-45deg) translate(-5px,5px);
+
+}
+
+.lineBurger2Active{
+
+    display: none;
+
+}
+
+.lineBurger3Active{
+
+    transform: rotate(45deg) translate(-5px,-6px);
+
+}
+
+.serviceSlideActive{
+
+    transform: rotate(180deg);
+
+}
+
+.serviceListActive{
+
+    height: 125px;
+
+    transform: scaleY(100%);
+
+}
+
+.difSlideActive{
+
+    transform: rotate(180deg);
+
+}
+
+.difListActive{
+
+    height: 125px;
+
+    transform: scaleY(100%);
+
+}
+/* Fim das classes de animações */

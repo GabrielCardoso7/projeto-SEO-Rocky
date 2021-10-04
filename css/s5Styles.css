@@ -1,0 +1,396 @@
+/* 
+    Arquivo que contém toda a estilização da Section 5 da página.
+
+*/
+
+/* Início do Bloco de estilização para Web */
+.s5{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: yellow;
+
+}
+
+#contactContainer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90vh;
+
+    background: black;
+
+}
+
+#contactText{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+
+}
+
+#contactLogo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 10vh;
+
+}
+
+#contactLogoImg{
+
+    width: 40%;
+    height: 100%;
+
+    background-image: url("../assets/web/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#contactLogo i{
+
+    width: 30%;
+
+    font-size: 4em;
+    text-align: center;
+    color: white;
+
+}
+
+#contactEmail{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 60%;
+    height: 10vh;
+
+    text-align: center;
+
+}
+
+#contactEmail span{
+
+    font-size: 1.4em;
+    font-weight: 300;
+    color: white;
+
+}
+
+#contactEmail i{
+
+   margin-right: 20px;
+
+   font-size: 1.5em;
+
+}
+
+#contactAddress{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    height: 10vh;
+
+}
+
+#contactAddress span{
+
+    font-size: 0.8em;
+    font-weight: 300;
+    color: white;
+
+}
+
+#contactAddress i{
+
+    margin-right: 20px;
+
+    font-size: 1.3em;
+
+}
+
+#contactText p{
+
+    width: 60%;
+
+    font-size: 1.4em;
+    font-weight: 800;
+    color: white;
+
+}
+
+#contactForm{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: 100%;
+
+}
+
+#contactForm form{
+
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 70%;
+    height: 85%;
+
+    background: gray;
+
+}
+
+#contactForm input{
+
+    width: 90%;
+    height: 5vh;
+    font-size: 2em;
+
+}
+
+#contactForm textarea{
+
+    width: 90%;
+    height: 25vh;
+    resize: none;
+    
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 2em;
+
+}
+
+#contactForm button{
+
+    width: 90%;
+    height: 6vh;
+
+    font-size: 1.5em;
+    font-weight: 800;
+    color: white;
+
+    border: none;
+
+    background: cyan;
+
+    cursor: pointer;
+
+}
+/* Fim do Bloco de estilização para Web */
+
+/* Início do Bloco de estilização para Mobile */
+@media screen and (max-width: 600px) {
+
+    .s5{
+
+        height: 100vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+        background: yellow;
+    
+    }
+    
+    #contactContainer{
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 90vh;
+    
+        background: black;
+    
+    }
+    
+    #contactText{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 50%;
+    
+    }
+    
+    #contactLogo{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width:80%;
+        height: 5vh;
+    
+    }
+    
+    #contactLogoImg{
+    
+        width: 40%;
+        height: 100%;
+    
+        background-image: url("../assets/web/logo.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    #contactLogo i{
+
+        font-size: 1.5em;
+        text-align: right;
+    
+    }
+    
+    #contactEmail{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        width: 80%;
+        height: 5vh;
+    
+        text-align: center;
+    
+    }
+    
+    #contactEmail span{
+    
+        font-size: 0.8em;
+        font-weight: 300;
+        color: white;
+    
+    }
+    
+    #contactEmail i{
+    
+       margin-right: 20px;
+    
+       font-size: 1em;
+    
+    }
+    
+    #contactAddress{
+    
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+        height: 5vh;
+    
+    }
+    
+    #contactAddress span{
+    
+        font-size: 0.6em;
+        font-weight: 300;
+        color: white;
+    
+    }
+    
+    #contactAddress i{
+    
+        margin-right: 20px;
+    
+        font-size: 1em;
+    
+    }
+    
+    #contactText p{
+    
+        width: 80%;
+
+        font-size: 0.6em;
+        font-weight: 300;
+        color: white;
+    
+    }
+    
+    #contactForm{
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        height: 50%;
+    
+    }
+    
+    #contactForm form{
+    
+        flex-direction: column;
+        justify-content: space-around;
+    
+        width: 100%;
+        height: 100%;
+    
+        background: gray;
+    
+    }
+    
+    #contactForm input{
+    
+        width: 80%;
+        height: 4vh;
+        font-size: 1em;
+    
+    }
+    
+    #contactForm textarea{
+    
+        width: 80%;
+        height: 12.5vh;
+        resize: none;
+        font-size: 1em;
+    
+    }
+    
+    #contactForm button{
+    
+        width: 80%;
+        height: 5vh;
+    
+        font-size: 1em;
+        font-weight: 800;
+        color: white;
+    
+        border: none;
+    
+        background: cyan;
+    
+        cursor: pointer;
+    
+    } 
+    
+}
+/* Início do Bloco de estilização para Mobile */
