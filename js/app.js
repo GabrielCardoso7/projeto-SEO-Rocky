@@ -219,12 +219,18 @@ const scrollToS4 = () =>{
 
 }
 
-//Função que ao receber um click no elemento com a classe toS5, rola a página até a Section 5 nas dimensões Web
+//Função que ao receber um click no elemento com a classe toS5 ou no elemento com o id btnContact, rola a página até a Section 5 nas dimensões Web
 const scrollToS5 = () =>{
 
+    const buttonToS5Main = document.querySelector('#btnContact');
     const buttonToS5 = document.querySelector('.toS5');
     const s5 = document.querySelector('.s5');
 
+    buttonToS5Main.addEventListener('click', function (event) {
+        event.preventDefault;
+        s5.scrollIntoView({ behavior: 'smooth' });
+    });
+    
     buttonToS5.addEventListener('click', function (event) {
         event.preventDefault;
         s5.scrollIntoView({ behavior: 'smooth' });

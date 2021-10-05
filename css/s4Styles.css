@@ -1,59 +1,61 @@
+@charset "UTF-8";
 /* 
     Arquivo que contém toda a estilização da Section 4 da página.
 
 */
-
 /* Início do Bloco de estilização para Web */
-.s4{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-
-    transform: translateX(-5%);
-    opacity: 0;
-    transition: transform 0.5s ease-in-out,
-                opacity 0.5s ease-in-out;
-
+.s4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-.difCard{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    width: 25%;
-    height: 70vh;
-
-    border-radius: 40px;
-
+.difCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25%;
+  height: 70vh;
+  border-radius: 40px;
 }
 
-.difCard i{
-
-    margin: 0;
-
-    font-size: 9em;
-    text-align: center;
-
-    color: white;
-
+.difCard i {
+  margin: 0;
+  font-size: 9em;
+  text-align: center;
+  color: white;
 }
 
-.difCard p{
-
-    width: 90%;
-
-    margin: 0% 10%;
-
-    font-weight: 800;
-    font-size: 1.6em;
-    text-align: center;
-    color: white;
-
+.difCard p {
+  width: 90%;
+  margin: 0% 10%;
+  font-weight: 800;
+  font-size: 1.6em;
+  text-align: center;
+  color: white;
 }
 
 /* 
@@ -68,97 +70,76 @@
         que será adicionada ao background do card.
     
 */
-.cardS4Bg1{
-
-    background-image: url("../assets/web/s4ft1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 175%;
-
+.cardS4Bg1 {
+  background-image: url("../assets/web/s4ft1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175%;
 }
 
-.cardS4Bg2{
-
-    background-image: url("../assets/web/s4ft2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 175%;
-
+.cardS4Bg2 {
+  background-image: url("../assets/web/s4ft2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175%;
 }
 
-.cardS4Bg3{
-
-    background-image: url("../assets/web/s4ft3.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 175%;
-
+.cardS4Bg3 {
+  background-image: url("../assets/web/s4ft3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 175%;
 }
+
 /* Fim do Bloco de estilização para Web */
-
 /* Início do Bloco de estilização para Mobile */
 @media screen and (max-width: 600px) {
-    
-    .s4{
-
-        display: flex;
+  .s4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -ms-flex-pack: distribute;
         justify-content: space-around;
-        align-items: center;
-    
-    }
-    
-    .difCard{
-
-        justify-content: center;
-    
-        width: 100%;
-        height: 35vh;
-        margin-bottom: 25px;
-    
-    }
-    
-    .difCard i{
-
-        font-size: 5em;
-    
-    }
-    
-    .difCard p{
-
-        font-size: 0.75em;
-        margin: revert;
-
-    }
-
-    .cardS4Bg1{
-
-        background-image: url("../assets/mobile/s4ft1.png");
-        background-size: 120%;
-    
-    }
-    
-    .cardS4Bg2{
-    
-        background-image: url("../assets/mobile/s4ft2.png");
-        background-size: 125%;
-    
-    }
-    
-    .cardS4Bg3{
-    
-        background-image: url("../assets/mobile/s4ft3.png");
-        background-size: 150%;
-    
-    }
-
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .difCard {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 35vh;
+    margin-bottom: 25px;
+  }
+  .difCard i {
+    font-size: 5em;
+  }
+  .difCard p {
+    font-size: 0.75em;
+    margin: revert;
+  }
+  .cardS4Bg1 {
+    background-image: url("../assets/mobile/s4ft1.png");
+    background-size: 120%;
+  }
+  .cardS4Bg2 {
+    background-image: url("../assets/mobile/s4ft2.png");
+    background-size: 125%;
+  }
+  .cardS4Bg3 {
+    background-image: url("../assets/mobile/s4ft3.png");
+    background-size: 150%;
+  }
 }
+
 /* Fim do Bloco de estilização para Mobile */
-
 /* Classe utilizada para efetuar a animação no arquivo app.js */
-.s4Active{
-
-    transform: translateX(0%);
-    opacity: 1;
-                
+.s4Active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
+/*# sourceMappingURL=s4Styles.css.map */

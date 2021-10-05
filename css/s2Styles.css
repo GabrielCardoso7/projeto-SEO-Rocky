@@ -1,95 +1,86 @@
+@charset "UTF-8";
 /* 
     Arquivo que contém toda a estilização da Section 2 da página.
 
 */
-
 /* Início do Bloco de estilização para Web */
-.s2{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-
-    transform: translateX(-5%);
-    opacity: 0;
-    transition: transform 0.5s ease-in-out,
-                opacity 0.5s ease-in-out;
-
+.s2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
-#aboutLabel{
-
-    width: 100%;
-
-    margin-left: 5%;
-
-    font-weight: 800;
-    font-size: 3em;
-
-    color: black;
-
+#aboutLabel {
+  width: 100%;
+  margin-left: 5%;
+  font-weight: 800;
+  font-size: 3em;
+  color: black;
 }
 
-#aboutText{
-
-    width: 60%;
-    margin: -5% 5% 0% 5%;
-    background-color: white;
-    box-shadow: 0 0 1em rgb(31, 31, 31);
-
+#aboutText {
+  width: 60%;
+  margin: -5% 5% 0% 5%;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1em #1f1f1f;
+          box-shadow: 0 0 1em #1f1f1f;
 }
 
-#aboutText p{
-
-    margin: 5%;
-
-    font-size: 1.2em;
-
+#aboutText p {
+  margin: 5%;
+  font-size: 1.2em;
 }
+
 /* Fim do Bloco de estilização para Web */
-
 /* Início do Bloco de estilização para Mobile */
 @media screen and (max-width: 600px) {
-
-    .s2{
-
-        display: flex;
+  .s2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #aboutLabel{
-
-        width: 80%;
-        margin-left: 0;
-
-        font-size: 2.5em;
-    
-    }
-    
-    #aboutText{
-
-        width: 80%;
-        margin: 0;
-    
-    }
-    
-    #aboutText p{
-    
-        font-size: 0.8em;
-    
-    }
-    
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #aboutLabel {
+    width: 80%;
+    margin-left: 0;
+    font-size: 2.5em;
+  }
+  #aboutText {
+    width: 80%;
+    margin: 0;
+  }
+  #aboutText p {
+    font-size: 0.8em;
+  }
 }
+
 /* Fim do Bloco de estilização para Web */
-
-
 /* Classe utilizada para efetuar a animação no arquivo app.js */
-.s2Active{
-
-    transform: translateX(0%);
-    opacity: 1;
-                
+.s2Active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
+/*# sourceMappingURL=s2Styles.css.map */
