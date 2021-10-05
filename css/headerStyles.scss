@@ -110,12 +110,12 @@
         background-color: rgba(0, 0, 0, 0);
         border-radius: 20px;
 
-        transform: translateX(-70%);
+        transform: translate3d(-70%, 0, 1px);
         transition: 
             transform 0.5s ease-in-out, 
             background-color 0.3s linear;
 
-        transform: translate3d(0, 0, 1px);
+        z-index: 10;
 
     }
 
@@ -307,7 +307,7 @@
 /* Classes utilizadas para efetuar as animações no arquivo app.js */
 .menuBurgerActive{
 
-    transform: translateX(0%);
+    transform: translate3d(0%, 0, 1px);
     background: rgba(0, 0, 0, 0.781);
 
 }
