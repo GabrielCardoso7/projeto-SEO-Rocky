@@ -115,6 +115,8 @@
         background-color: rgba(0, 0, 0, 0);
         border-radius: 20px;
 
+        font-size: 0.8em;
+
         transform: 
             translate3d(-70%, 0, 1px)
             perspective(500px);
@@ -218,8 +220,8 @@
         height: 1px;
         background-color: white;
         display: block;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
     }
 
@@ -233,7 +235,7 @@
     .serviceSlide{
 
         position: absolute;
-        right: 10%;
+        right: 15%;
 
         color: white;
 
@@ -244,10 +246,12 @@
 
     .serviceList{
 
+        display: none;
+
         width: 100%;
         height: 1px;
         
-        transform: scaleY(0%);
+        transform: scaleY(0);
         transition: 
             transform 0.5s ease-in-out,
             height 0.5s ease-in-out;
@@ -261,12 +265,14 @@
         font-size: 0.8em;
         color: white;
 
+        transition: opacity 0.3s ease-in-out;
+
     }
 
     .difSlide{
 
         position: absolute;
-        right: 10%;
+        right: 15%;
 
         color: white;
 
@@ -277,10 +283,12 @@
 
     .difList{
 
+        display: none;
+
         width: 100%;
         height: 1px;
         
-        transform: scaleY(0%);
+        transform: scaleY(0);
         transition: 
             transform 0.5s ease-in-out,
             height 0.5s ease-in-out;
@@ -293,6 +301,8 @@
 
         font-size: 0.8em;
         color: white;
+
+        transition: opacity 0.3s ease-in-out;
 
     }
 
@@ -361,9 +371,11 @@
 
 .serviceListActive{
 
-    height: 140px;
+    display: block;
 
-    transform: scaleY(100%);
+    height: 120px;
+
+    transform: scaleY(1);
 
 }
 
@@ -375,9 +387,11 @@
 
 .difListActive{
 
-    height: 140px;
+    display: block;
 
-    transform: scaleY(100%);
+    height: 120px;
+
+    transform: scaleY(1);
 
 }
 /* Fim das classes de animações */

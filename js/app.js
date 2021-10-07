@@ -36,12 +36,12 @@ const burgerSlide = () =>{
 const serviceSlide = () =>{
 
     const buttonSlide = document.querySelector('.serviceSlide');
-    const serviceList = document.querySelector('.serviceList')
+    const serviceList = document.querySelector('.serviceList');
 
     buttonSlide.addEventListener('click', () => {
 
         serviceList.classList.toggle('serviceListActive');
-        buttonSlide.classList.toggle('serviceSlideActive')
+        buttonSlide.classList.toggle('serviceSlideActive');
 
     });
 
@@ -52,12 +52,13 @@ const serviceSlide = () =>{
 const difSlide = () =>{
 
     const buttonSlide = document.querySelector('.difSlide');
-    const difList = document.querySelector('.difList')
+    const difList = document.querySelector('.difList');
+    
 
     buttonSlide.addEventListener('click', () => {
 
         difList.classList.toggle('difListActive');
-        buttonSlide.classList.toggle('difSlideActive')
+        buttonSlide.classList.toggle('difSlideActive');
 
     });
 

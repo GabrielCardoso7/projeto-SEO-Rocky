@@ -93,6 +93,7 @@
     justify-items: end;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 20px;
+    font-size: 0.8em;
     -webkit-transform: translate3d(-70%, 0, 1px) perspective(500px);
             transform: translate3d(-70%, 0, 1px) perspective(500px);
     -webkit-transition: background-color 0.3s linear,  -webkit-transform 0.5s ease-in-out;
@@ -193,8 +194,8 @@
     height: 1px;
     background-color: white;
     display: block;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .burgerLinksMobile a {
     text-decoration: none;
@@ -202,7 +203,7 @@
   }
   .serviceSlide {
     position: absolute;
-    right: 10%;
+    right: 15%;
     color: white;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -212,10 +213,11 @@
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .serviceList {
+    display: none;
     width: 100%;
     height: 1px;
-    -webkit-transform: scaleY(0%);
-            transform: scaleY(0%);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transition: height 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     transition: height 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
@@ -225,10 +227,12 @@
     margin-top: 10px;
     font-size: 0.8em;
     color: white;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
   .difSlide {
     position: absolute;
-    right: 10%;
+    right: 15%;
     color: white;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -238,10 +242,11 @@
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .difList {
+    display: none;
     width: 100%;
     height: 1px;
-    -webkit-transform: scaleY(0%);
-            transform: scaleY(0%);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     -webkit-transition: height 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     transition: height 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
@@ -251,6 +256,8 @@
     margin-top: 10px;
     font-size: 0.8em;
     color: white;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
   }
   #navLogo {
     background-image: url("../assets/mobile/logo.png");
@@ -297,9 +304,10 @@
 }
 
 .serviceListActive {
-  height: 140px;
-  -webkit-transform: scaleY(100%);
-          transform: scaleY(100%);
+  display: block;
+  height: 120px;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 .difSlideActive {
@@ -308,9 +316,10 @@
 }
 
 .difListActive {
-  height: 140px;
-  -webkit-transform: scaleY(100%);
-          transform: scaleY(100%);
+  display: block;
+  height: 120px;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 /* Fim das classes de animações */

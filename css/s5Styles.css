@@ -314,6 +314,7 @@
   }
   #contactText p {
     width: 80%;
+    margin: 5px 0 0 0;
     font-size: 0.6em;
     font-weight: 300;
     color: white;
